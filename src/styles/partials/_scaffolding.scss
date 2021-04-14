@@ -1,0 +1,28 @@
+// General stuff
+
+html,
+body {
+  font-size: 16px;
+
+  -webkit-font-smoothing: antialiased !important;
+  font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+
+  @include transition(all ease-in-out 0.2s);
+
+  @include media-breakpoint-up(lg) {
+    font-size: 18px;
+  }
+}
+
+a, button, img {
+	text-decoration: none !important;
+	display: inline-block;
+  @include transition(all ease-in-out 0.2s);
+}
+
+.container {
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+}
